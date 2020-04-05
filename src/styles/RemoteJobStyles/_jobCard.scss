@@ -1,0 +1,58 @@
+.jobcard {
+    border: 2px solid rgba($aqua, 0.25);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    background: rgba(white, 0.5);
+
+    .inner {
+        padding: 2rem;
+    }
+
+    .jobcard_title {
+        @extend .d-flex;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        .jobcard_title_img {
+            @extend .center-bg;
+            background-size: 65%;
+            width: 7.5rem;
+            height: 7.5rem;
+            border-radius: 100%;
+            background-color: white;
+            margin-right: 2rem;
+            border: 1px solid rgba($aqua, 0.25);
+            display: none;
+            @media(min-width: 568px) {
+                display: block;
+            }
+        }
+    }
+
+    .jobcard_company {
+        font-family: $title-font;
+    }
+
+    .jobcard_description {
+        padding-bottom: 1rem;
+        word-break: break-word;
+    }
+
+    .jobcard_list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        .jobcard_tag {
+            @extend .btn-secondary;
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .jobcard_btn {
+        margin-right: 1rem;
+    }
+}

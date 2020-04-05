@@ -1,0 +1,51 @@
+@import './animation';
+
+.about_section {
+  background: $about-bg;
+  padding: 4rem 0;
+  height: 100vh;
+  min-height: 100%;
+  overflow: scroll;
+  @extend .d-flex;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    padding: 4rem 2rem;
+  }
+  .title {
+    padding-bottom: 2rem;
+
+    // @include media-breakpoint-up(lg) {
+    //   padding-top: 8rem;
+    // }
+  }
+}
+
+.about_section_text {
+
+  p {
+    font-size: $m-size;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .link_text {
+    text-decoration: underline;
+
+  }
+}
+
+.skillslist_item {
+  border: 1px solid $off-white;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+
+
+  &:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+  }
+}

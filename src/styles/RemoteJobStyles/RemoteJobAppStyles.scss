@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Nunito:400,600|Shadows+Into+Light&display=swap');
+@import '../Global/global';
+
+#remoteJobApp {
+    @import './settings';
+    @import './base';
+    @import './filters';
+    @import './allFilters';
+    @import './jobCard';
+    @import './RemoteJobApp';
+    @import './textFilter';
+}

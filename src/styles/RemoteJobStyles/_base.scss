@@ -1,0 +1,109 @@
+#remoteJobApp {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    background: $off-white;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.transition {
+    -webkit-transition: 200ms ease-out 100ms;
+    -moz-transition: 200ms ease-out 100ms;
+    -o-transition: 200ms ease-out 100ms;
+    transition: 200ms ease-out 100ms;
+}
+
+a {
+    @extend .transition;
+
+    &:hover {
+        color: $off-black;
+    }
+}
+
+h1,
+h2 {
+    font-family: $title-font;
+    color: $off-black;
+    font-size: $l-size;
+}
+
+h3 {
+    font-size: $m-size;
+}
+
+p,
+li,
+a {
+    font-family: $body-font;
+    color: $off-black;
+    font-size: $s-size;
+}
+
+p {
+    margin-bottom: 0;
+    color: $off-black;
+    font-size: $s-size;
+}
+
+.btn-primary {
+    @extend .transition;
+    color: $off-black;
+    border: 1px solid rgba($aqua, 0.5);
+    background: $primary;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: $s-size;
+    font-family: $body-font;
+    font-weight: 600;
+
+    &:hover {
+        background: $aqua;
+        border: 1px solid rgba($aqua, 0.5);
+    }
+
+    &:active {
+        background: $aqua !important;
+    }
+
+    &:focus {
+        background: $aqua !important;
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-secondary {
+    @extend .transition;
+    border: 1px solid $off-black;
+    border-radius: 2rem;
+    background: transparent;
+    padding: 0.5rem 2rem;
+    color: black;
+    font-size: $s-size;
+    font-weight: 300;
+    font-family: $body-font;
+    font-weight: 600;
+
+    &:hover,
+    active {
+        background: $aqua;
+    }
+}
+
+.center-bg {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

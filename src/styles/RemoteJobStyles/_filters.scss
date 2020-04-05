@@ -1,0 +1,19 @@
+.mainfilters {
+    .mainfilters_list {
+        @extend .d-flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+       .mainfilters_list_item {
+           margin-left: 2rem;
+           text-align: center;
+           &:first-child {
+               margin-left: 0;
+           }
+           .mainfilters_list_item_btn {
+              @extend .btn-primary;
+              font-size: 1.4rem;
+           }
+       }
+    }
+}

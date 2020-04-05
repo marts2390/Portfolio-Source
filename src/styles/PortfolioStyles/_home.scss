@@ -1,0 +1,96 @@
+
+.homepage {
+  overflow: hidden;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.homepage {
+  canvas {
+    position: relative;
+    height: 100% !important;
+  }
+}
+
+.canvas_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+
+
+.top-section {
+  position: relative;
+  background: $off-black;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.homepage_title {
+  @extend .d-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  .intro-text {
+    height: 25rem;
+    z-index: 999;
+  }
+
+  h1 {
+    color: $off-white;
+    min-height: 5rem;
+    font-size: $l-size;
+
+    @include media-breakpoint-up(md) {
+      font-size: $xl-size;
+    }
+  }
+}
+
+
+.contact {
+  overflow: scroll;
+  height: 100vh;
+  min-height: 100%;
+  background: $about-bg;
+  @extend .d-flex;
+  align-items: center;
+
+  .title {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+.contact-form {
+  display: inline-grid;
+  width: 100%;
+
+  textarea {
+    width: 100%;
+    border-radius: 4px;
+    height: 20rem;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+
+  .submitBtn {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: $m-size;
+  }
+}

@@ -1,0 +1,63 @@
+a {
+    @extend .transition;
+}
+
+h1,
+h2 {
+    font-family: $title-font;
+    font-size: $m-xl-size;
+    color: $white;
+    font-weight: $thin-font;
+
+    @include media-breakpoint-up(md) {
+        font-size: $xl-size;
+    }
+}
+
+h3,
+h4 {
+    font-size: $m-l-size;
+    color: $white;
+
+    @include media-breakpoint-up(md) {
+        font-size: $l-size;
+    }
+}
+
+h5,
+h6 {
+    font-size: $m-size;
+    color: $white;
+}
+
+p,
+li,
+a {
+    font-family: $body-font;
+    font-size: $s-size;
+    color: $off-white;
+    font-weight: $thin-font;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.primary_btn {
+    font-size: 1.6rem;
+    min-width: 25rem;
+}
+
+.center-bg {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.error_msg {
+    background: $red;
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    color: $white;
+}

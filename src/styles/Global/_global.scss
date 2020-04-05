@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Nunito&display=swap');
+@import './node_modules/bootstrap/scss/bootstrap-grid';
+@import './node_modules/bootstrap/scss/bootstrap-reboot';
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:focus {
+    outline: none !important;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.transition {
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+}
+
+.nav_list {
+    h4 {
+      font-size: 2.6rem!important;
+
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            padding-bottom: 2rem;
+
+            a {
+                @extend .transition;
+                font-size: 1.8rem !important;
+                text-transform: uppercase !important;
+                font-family: "Montserrat", sans-serif !important;
+                white-space: nowrap;
+                font-weight: 300 !important;
+                color: #e8e8e8 !important;
+
+                &:hover {
+                    color: #e8e8e8 !important;
+                    letter-spacing: 0.20rem !important;
+                    text-decoration: none;
+                }
+
+                // @media(min-width: 768px) {
+                //     font-size: 1.8rem !important;
+                // }
+            }
+        }
+    }
+}
+

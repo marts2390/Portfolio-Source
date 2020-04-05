@@ -1,0 +1,94 @@
+@import './animation';
+.portfolio_section {
+  @extend .transition;
+  background-color: $blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: scroll;
+  padding: 4rem 0;
+  height: 100vh;
+  min-height: 100%;
+  @include media-breakpoint-up(sm) {
+    padding: 4rem 2rem;
+  }
+}
+
+.filter-button {
+  font-size: 0.8rem;
+  @include media-breakpoint-up(md) {
+    font-size: 1.4rem;
+  }
+}
+
+.gridList {
+  width: 100%;
+  height: 100%;
+}
+
+.gridListTile {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  position: relative;
+  border-radius: 0 !important;
+
+  &:hover {
+    .infobar {
+      opacity: 1;
+    }
+
+    .listItems {
+      display: block;
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+
+
+.overlay {
+  @extend .transition;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+}
+
+.infobar {
+  @extend .transition;
+  transition-delay: 200ms;
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+
+.listItems {
+  display: none;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  background: #3f52b5;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}

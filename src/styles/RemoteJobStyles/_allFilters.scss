@@ -1,0 +1,41 @@
+.allfilters {
+    border: 2px solid rgba($aqua, 0.25);
+    border-radius: 2rem;
+    background: rgba(white, 0.5);
+    position: relative;
+    width: 100%;
+
+    @media(min-width: 968px) {
+        margin-bottom: 2rem;
+    }
+
+    .icon_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .allfilters_toggle {
+        @extend .btn-primary;
+        background: $aqua;
+        width: auto;
+    }
+
+    .allfilters_list {
+        list-style: none;
+        padding: 1rem;
+        border-top: 2px solid rgba($aqua, 0.25);
+    }
+
+    .allfilters_list_item {
+        display: inline-block;
+        margin: 0.25rem;
+    }
+
+    .allfilters_list_item_btn {
+        @extend .btn-secondary;
+        padding: 0.5rem 1rem;
+        text-transform: capitalize;
+    }
+}
